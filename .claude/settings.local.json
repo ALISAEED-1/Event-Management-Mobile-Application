@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffmpeg -i \"C:\\\\Users\\\\sadda\\\\Desktop\\\\Videos\\\\Captures\\\\interntask – main.dart [interntask] 2026-04-24 17-05-01.mp4\" -ss 00:00:03 -vframes 1 \"C:\\\\Users\\\\sadda\\\\Desktop\\\\frame1.png\" -y)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(flutter pub *)",
+      "Bash(flutter analyze *)",
+      "Bash(dir \"C:\\\\Users\\\\sadda\\\\AndroidStudioProjects\\\\interntask\\\\assets\\\\images\" /B)"
+    ]
+  }
+}
