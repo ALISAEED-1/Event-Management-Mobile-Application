@@ -1,4 +1,4 @@
-# interntask
+# Event Management Mobile Application
 
 A new Flutter project.
 
