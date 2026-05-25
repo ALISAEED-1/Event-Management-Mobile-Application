@@ -1,16 +1,39 @@
-# Event Management Mobile Application
+# Event Management Mobile App
 
-A new Flutter project.
+A two-sided Flutter mobile app for discovering and managing community events,
+built with Firebase Auth and Firestore (accessed via REST to bypass gRPC).
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+### User side
+- Sign up / sign in with Firebase Auth
+- Browse upcoming events with calendar + list views
+- Filter events by city, state, and category
+- Favorite events (synced to your Firestore profile)
+- Vote on community proposals — real-time vote counts
+- View group profiles and their event feeds
+- Light / dark theme support
 
-A few resources to get you started if this is your first Flutter project:
+### Admin side
+- Hardcoded admin login (single-credential demo)
+- Create new events (with image, date/time, location, details)
+- Create polls / votes for the community
+- View all events with the same filtering experience as users
+- Persistent admin "favorites" list (in-memory + best-effort Firestore sync)
+- Manage the group profile feed
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Tech stack
+- **Flutter** (Material 3, Google Fonts)
+- **Firebase Auth** for user authentication
+- **Cloud Firestore** via REST API (bypasses gRPC for networks where it's blocked)
+- `table_calendar`, `smooth_page_indicator`, `image_picker`, `http`, `provider`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project structure
+- `lib/user/` — user-facing screens (home, features, community, favorites, profile)
+- `lib/admin/` — admin screens (home, create event/vote, profile, group)
+- `lib/backend/` — models and services (events, votes, users, favorites)
+- `lib/backend/services/firestore_rest_service.dart` — shared REST wrapper
+
+## Admin credentials (demo)
+- Email: `admin@interntask.com`
+- Password: `Admin@1234`
