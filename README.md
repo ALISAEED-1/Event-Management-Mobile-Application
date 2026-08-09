@@ -7,8 +7,16 @@ data handling — iOS and Android from one
 Flutter codebase.
 
 
+
 ## Screenshots
 
+<p align="center">
+  <img src="screenshots/img5.jpg" width="250">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/img4.jpg" width="250">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/img3.jpg" width="250">
+</p>
 
 
 ## Features
